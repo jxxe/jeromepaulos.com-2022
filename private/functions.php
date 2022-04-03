@@ -11,6 +11,11 @@ function slugify(string $text): string {
     return $text;
 }
 
+function get_cdn_url(string $url, int $width): string {
+    $url = str_replace(['http://', 'https://'], '', $url);
+    return "https://cdn.statically.io/img/$url?q=75&f=auto&w=$width";
+}
+
 /**
  * Same as {@link scandir()}, but only returns files that match a pattern
  * @param string $directory

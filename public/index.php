@@ -12,6 +12,7 @@ $config = json_decode(@file_get_contents('../private/config.json'), true);
 $name = $config['name'] ?? '$PHOTOGRAPHER_NAME';
 $contact = $config['contact'] ?? '';
 $other_links = $config['links'] ?? [];
+$domain = $config['domain'];
 
 $albums = filter_dir('pages', do_not_match: '*.md'); // JPEG files
 $md_pages = array_map(fn($file) => substr($file, 0, -3), filter_dir('pages', match: '*.md')); // Markdown files
@@ -38,6 +39,7 @@ $md_page_content = '';
 
 if(empty($current_page)) {
     $is_md_page = true;
+    http_response_code(404);
     $md_page_content = '<p>Page not found</p>';
     $title = "404 — $name";
 } else {
@@ -50,7 +52,7 @@ if(empty($current_page)) {
 
             $images[] = [
                 'caption' => $exif['ImageDescription'] ?? '',
-                'src' => "/pages/$current_page/$file",
+                'src' => get_cdn_url("$domain/pages/$current_page/$file", $exif['COMPUTED']['Width']),
                 'width' => $exif['COMPUTED']['Width'],
                 'height' => $exif['COMPUTED']['Height']
             ];
