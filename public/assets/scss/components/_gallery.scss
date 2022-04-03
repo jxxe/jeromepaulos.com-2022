@@ -1,0 +1,46 @@
+.gallery {
+    .images {
+        display: grid;
+        grid-gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .gallery-page {
+        height: 100vh;
+        padding-right: 0;
+    }
+
+    .gallery {
+        overflow: hidden;
+
+        .images {
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            gap: 1rem;
+
+            .image {
+                width: auto;
+                max-width: 80%;
+                height: 100%;
+                object-fit: contain;
+                object-position: left;
+
+                transition: opacity 0.75s;
+                margin: 0 -1.5rem;
+                padding: 0 1.5rem;
+
+                &:not(.focused) {
+                    opacity: 0.25;
+                    cursor: pointer;
+                }
+
+                &:last-child:not(:first-child) {
+                    padding-right: 3rem;
+                }
+            }
+        }
+    }
+}

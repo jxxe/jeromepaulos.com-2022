@@ -1,0 +1,15 @@
+.text {
+    line-height: 1.5rem;
+    max-width: 600px;
+    margin-top: -2px;
+
+    :first-child {
+        margin-top: 0;
+    }
+
+    h1, h2, h3 {
+        font-size: 1rem;
+        margin-top: 2rem;
+        margin-bottom: -0.5rem;
+    }
+}

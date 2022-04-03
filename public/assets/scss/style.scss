@@ -1,0 +1,13 @@
+$accent: #01426a;
+$dark-mode-accent: #9fdafe;
+
+:root {
+    --accent: #{$accent};
+    --gray: gray;
+    --font: 'franklin-gothic-urw', 'Helvetica Neue', sans-serif;
+}
+
+@import 'base';
+@import 'components/sidebar';
+@import 'components/gallery';
+@import 'components/text';

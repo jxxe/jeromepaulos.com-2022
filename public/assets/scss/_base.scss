@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font);
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-gap: 3rem;
+
+    /*@media screen and (prefers-color-scheme: dark) {
+        background-color: black;
+        color: white;
+        --accent: #{$dark-mode-accent};
+    }*/
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover {
+        color: var(--accent);
+    }
+}
+
+p {
+    a {
+        text-decoration: underline;
+        transition: none;
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
