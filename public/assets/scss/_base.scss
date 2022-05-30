@@ -16,11 +16,11 @@ body {
     grid-template-columns: 150px 1fr;
     grid-gap: 3rem;
 
-    /*@media screen and (prefers-color-scheme: dark) {
-        background-color: black;
+    @media screen and (prefers-color-scheme: dark) {
+        background-color: #101213;
         color: white;
         --accent: #{$dark-mode-accent};
-    }*/
+    }
 }
 
 a {

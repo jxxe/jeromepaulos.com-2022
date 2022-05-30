@@ -1,5 +1,5 @@
-$accent: #01426a;
-$dark-mode-accent: #9fdafe;
+$accent: #ff8000;
+$dark-mode-accent: lighten($accent, 30);
 
 :root {
     --accent: #{$accent};

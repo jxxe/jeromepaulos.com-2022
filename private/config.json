@@ -1,7 +1,12 @@
 {
     "contact": "(510) 944-4641",
     "name": "Jerome Paulos",
-    "color": "#dd353b",
+    "color": "#ff8000",
     "domain": "https://jeromepaulos.com",
-    "links": []
+    "links": [
+        {
+            "name": "Blog",
+            "href": "https://blog.jeromepaulos.com"
+        }
+    ]
 }

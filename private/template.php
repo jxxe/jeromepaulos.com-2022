@@ -47,14 +47,12 @@
                     <?php foreach($md_pages as $page): ?>
                         <a href="/<?= slugify($page) ?>"><?= htmlspecialchars($page) ?></a>
                     <?php endforeach; ?>
-                </div>
-            <?php endif; ?>
 
-            <?php if(!empty($other_links)): ?>
-                <div class="links">
-                    <?php foreach($other_links as $link): ?>
-                        <a href="<?= htmlspecialchars($link['href']) ?>"><?= htmlspecialchars($link['name']) ?></a>
-                    <?php endforeach; ?>
+                    <?php if(!empty($other_links)): ?>
+                        <?php foreach($other_links as $link): ?>
+                            <a href="<?= htmlspecialchars($link['href']) ?>"><?= htmlspecialchars($link['name']) ?></a>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
                 </div>
             <?php endif; ?>
         </div>
