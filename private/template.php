@@ -85,6 +85,7 @@
     </div>
 
     <script src="/assets/main.js"></script>
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "edbdddd2a7a745da9afd65d8fb0e9150"}'></script>
 
     <noscript>
         <style>
