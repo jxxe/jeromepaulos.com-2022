@@ -1,4 +1,4 @@
-Jerome Paulos is a multimedia journalist and developer from Berkeley, California. He is currently a senior at Berkeley High School and will be attending Macalester College in St. Paul, Minnesota.
+Jerome Paulos is a multimedia journalist and developer from Berkeley, California. He currently attends Macalester College in St. Paul, Minnesota.
 
 ## PUBLISHED IN
 Berkeley High Jacket ([link](https://berkeleyhighjacket.com/?s=Jerome+Paulos))  
